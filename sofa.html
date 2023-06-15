@@ -1,0 +1,1629 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Royal Decors : Gallery-Sofa</title>
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+    <style>
+    .myImages{
+        margin-top: 100px;
+    }
+.img-row {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center!important;
+    align-items: center;
+    margin-top: 10px;
+}
+.img-row img{
+    height: 200px;
+}
+.column {
+  width: 23%;
+  margin: 10px 0 10px 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  padding: 25px;
+  position: absolute;
+  top: 45px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+.mySlides img{
+    height: 500px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px) {
+.img-row {
+    flex-direction: column;
+    height: auto;
+}
+.img-row img{
+    height: 220px;
+    width: 80%;
+}
+.column{
+    width: 90%;
+}
+    .modal-content{
+        width: 80%;
+    }
+  .mySlides img{
+    height: 300px;
+  }
+  .my-break{
+    display: none;
+}
+.myImages{
+    margin-top: 10px;
+}
+}
+</style>
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <i class="fa fa-yelp mr-1" aria-hidden="true"></i>Royal Decors</a>
+                </h1>
+                <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <!-- search button -->
+                        <!-- <div class="search-right ml-lg-3">
+                            <form action="#search" method="GET" class="search-box position-relative">
+                                <div class="input-search">
+                                    <input type="search" placeholder="Enter Keyword" name="search" required="required"
+                                        autofocus="" class="search-popup">
+                                </div>
+                                <button type="submit" class="btn search-btn"><i class="fa fa-search"
+                                        aria-hidden="true"></i></button>
+                            </form>
+                        </div> -->
+                        <!-- //search button -->
+                    </ul>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!-- inner banner -->
+    <div class="inner-banner">
+        <div class="w3l-breadcrumb">
+            <div class="container">
+                <h4 class="inner-text-title font-weight-bold mb-2">Sofa</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Home</a></li>
+                    <li class=""><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span><a href="gallery.html">Gallery</a>
+                        <span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Sofa
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //inner banner -->
+    
+    <!-- Photo Grid -->
+     <!-- Photo Grid -->
+<section class="myImages">
+    <div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+
+<br class="my-break">
+<section class="myImages">
+<div class="img-row">
+<div class="column">
+    <img src="./assets/images/sofa/s5.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="./assets/images/sofa/s6.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="./assets/images/sofa/s7.jpeg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="./assets/images/sofa/s8.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+</div>
+</div>
+</section>
+
+<br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s9.jpeg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s10.jpeg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s11.jpeg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s12.jpeg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s13.jpeg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s14.jpeg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s15.jpeg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s16.jpeg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+    <br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">  
+        <img src="./assets/images/sofa/s17.jpeg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s18.jpeg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s19.jpeg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s20.jpeg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+        <br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s21.jpeg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s22.jpeg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s23.jpeg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s24.jpeg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+        <br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s25.jpeg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s26.jpeg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s27.jpeg" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s28.jpeg" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+        <br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s29.jpeg" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s30.jpeg" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s31.jpeg" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s32.jpeg" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+        <br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s33.jpeg" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s34.jpeg" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s35.jpeg" style="width:100%" onclick="openModal();currentSlide(35)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s36.jpeg" style="width:100%" onclick="openModal();currentSlide(36)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+        <br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s37.jpeg" style="width:100%" onclick="openModal();currentSlide(37)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s38.jpeg" style="width:100%" onclick="openModal();currentSlide(38)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s39.jpeg" style="width:100%" onclick="openModal();currentSlide(39)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s40.jpeg" style="width:100%" onclick="openModal();currentSlide(40)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+            <br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s41.jpeg" style="width:100%" onclick="openModal();currentSlide(41)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s42.jpeg" style="width:100%" onclick="openModal();currentSlide(42)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s43.jpeg" style="width:100%" onclick="openModal();currentSlide(43)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s44.jpeg" style="width:100%" onclick="openModal();currentSlide(44)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s45.jpeg" style="width:100%" onclick="openModal();currentSlide(45)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s46.jpeg" style="width:100%" onclick="openModal();currentSlide(46)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s47.jpeg" style="width:100%" onclick="openModal();currentSlide(47)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s48.jpeg" style="width:100%" onclick="openModal();currentSlide(48)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+<div class="img-row">
+    <div class="column">
+        <img src="./assets/images/sofa/s49.jpeg" style="width:100%" onclick="openModal();currentSlide(49)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s50.jpeg" style="width:100%" onclick="openModal();currentSlide(50)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s51.jpeg" style="width:100%" onclick="openModal();currentSlide(51)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="./assets/images/sofa/s52.jpeg" style="width:100%" onclick="openModal();currentSlide(52)" class="hover-shadow cursor">
+    </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s43.jpeg" style="width:100%" onclick="openModal();currentSlide(53)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s54.jpeg" style="width:100%" onclick="openModal();currentSlide(54)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s55.jpeg" style="width:100%" onclick="openModal();currentSlide(55)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s56.jpeg" style="width:100%" onclick="openModal();currentSlide(56)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+        <div class="img-row">
+            <div class="column">
+                <img src="./assets/images/sofa/s57.jpeg" style="width:100%" onclick="openModal();currentSlide(57)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./assets/images/sofa/s58.jpeg" style="width:100%" onclick="openModal();currentSlide(58)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./assets/images/sofa/s59.jpeg" style="width:100%" onclick="openModal();currentSlide(59)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./assets/images/sofa/s60.jpeg" style="width:100%" onclick="openModal();currentSlide(60)" class="hover-shadow cursor">
+            </div>
+        </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+            <div class="img-row">
+                <div class="column">
+                    <img src="./assets/images/sofa/s61.jpeg" style="width:100%" onclick="openModal();currentSlide(61)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="./assets/images/sofa/s62.jpeg" style="width:100%" onclick="openModal();currentSlide(62)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="./assets/images/sofa/s63.jpeg" style="width:100%" onclick="openModal();currentSlide(63)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="./assets/images/sofa/s64.jpeg" style="width:100%" onclick="openModal();currentSlide(64)" class="hover-shadow cursor">
+                </div>
+            </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s65.jpeg" style="width:100%" onclick="openModal();currentSlide(65)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s66.jpeg" style="width:100%" onclick="openModal();currentSlide(66)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s67.jpeg" style="width:100%" onclick="openModal();currentSlide(67)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s68.jpeg" style="width:100%" onclick="openModal();currentSlide(68)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s69.jpeg" style="width:100%" onclick="openModal();currentSlide(69)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s70.jpeg" style="width:100%" onclick="openModal();currentSlide(70)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s71.jpeg" style="width:100%" onclick="openModal();currentSlide(71)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s72.jpeg" style="width:100%" onclick="openModal();currentSlide(72)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s73.jpeg" style="width:100%" onclick="openModal();currentSlide(73)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s74.jpeg" style="width:100%" onclick="openModal();currentSlide(74)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s75.jpeg" style="width:100%" onclick="openModal();currentSlide(75)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s76.jpeg" style="width:100%" onclick="openModal();currentSlide(76)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s77.jpeg" style="width:100%" onclick="openModal();currentSlide(77)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s78.jpeg" style="width:100%" onclick="openModal();currentSlide(78)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s79.jpeg" style="width:100%" onclick="openModal();currentSlide(79)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s80.jpeg" style="width:100%" onclick="openModal();currentSlide(80)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s81.jpeg" style="width:100%" onclick="openModal();currentSlide(81)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s82.jpeg" style="width:100%" onclick="openModal();currentSlide(82)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s83.jpeg" style="width:100%" onclick="openModal();currentSlide(83)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s84.jpeg" style="width:100%" onclick="openModal();currentSlide(84)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s85.jpeg" style="width:100%" onclick="openModal();currentSlide(85)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s86.jpeg" style="width:100%" onclick="openModal();currentSlide(86)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s87.jpeg" style="width:100%" onclick="openModal();currentSlide(87)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s88.jpeg" style="width:100%" onclick="openModal();currentSlide(88)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s89.jpeg" style="width:100%" onclick="openModal();currentSlide(89)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s90.jpeg" style="width:100%" onclick="openModal();currentSlide(90)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s91.jpeg" style="width:100%" onclick="openModal();currentSlide(91)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s92.jpeg" style="width:100%" onclick="openModal();currentSlide(92)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s93.jpeg" style="width:100%" onclick="openModal();currentSlide(93)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s94.jpeg" style="width:100%" onclick="openModal();currentSlide(94)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s95.jpeg" style="width:100%" onclick="openModal();currentSlide(95)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s96.jpeg" style="width:100%" onclick="openModal();currentSlide(96)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s97.jpeg" style="width:100%" onclick="openModal();currentSlide(97)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s98.jpeg" style="width:100%" onclick="openModal();currentSlide(98)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s99.jpeg" style="width:100%" onclick="openModal();currentSlide(99)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s100.jpeg" style="width:100%" onclick="openModal();currentSlide(100)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s101.jpeg" style="width:100%" onclick="openModal();currentSlide(101)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s102.jpeg" style="width:100%" onclick="openModal();currentSlide(102)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s103.jpeg" style="width:100%" onclick="openModal();currentSlide(103)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s104.jpeg" style="width:100%" onclick="openModal();currentSlide(104)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s105.jpeg" style="width:100%" onclick="openModal();currentSlide(105)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s106.jpeg" style="width:100%" onclick="openModal();currentSlide(106)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s107.jpeg" style="width:100%" onclick="openModal();currentSlide(107)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s108.jpeg" style="width:100%" onclick="openModal();currentSlide(108)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s109.jpeg" style="width:100%" onclick="openModal();currentSlide(109)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s110.jpeg" style="width:100%" onclick="openModal();currentSlide(110)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s111.jpeg" style="width:100%" onclick="openModal();currentSlide(111)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s112.jpeg" style="width:100%" onclick="openModal();currentSlide(112)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s113.jpeg" style="width:100%" onclick="openModal();currentSlide(113)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s114.jpeg" style="width:100%" onclick="openModal();currentSlide(114)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s115.jpeg" style="width:100%" onclick="openModal();currentSlide(115)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s116.jpeg" style="width:100%" onclick="openModal();currentSlide(116)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+<section class="myImages">
+    <div class="img-row">
+        <div class="column">
+            <img src="./assets/images/sofa/s117.jpeg" style="width:100%" onclick="openModal();currentSlide(117)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s118.jpeg" style="width:100%" onclick="openModal();currentSlide(118)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s119.jpeg" style="width:100%;" onclick="openModal();currentSlide(119)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./assets/images/sofa/s120.jpeg" style="width:100%" onclick="openModal();currentSlide(120)" class="hover-shadow cursor">
+        </div>
+    </div>
+</section>
+<br class="my-break">
+
+
+
+
+<!--My image model-->
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+
+        <div class="mySlides">
+        <div class="numbertext">1 / 120</div>
+        <img src="./assets/images/sofa/s1.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">2 / 120</div>
+        <img src="./assets/images/sofa/s2.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">3 / 120</div>
+        <img src="./assets/images/sofa/s3.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">4 / 120</div>
+        <img src="./assets/images/sofa/s4.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">5 / 120</div>
+        <img src="./assets/images/sofa/s5.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">6 / 120</div>
+        <img src="./assets/images/sofa/s6.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">7 / 120</div>
+        <img src="./assets/images/sofa/s7.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">8 / 120</div>
+        <img src="./assets/images/sofa/s8.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides">
+        <div class="numbertext">9 / 120</div>
+        <img src="./assets/images/sofa/s9.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">10 / 120</div>
+        <img src="./assets/images/sofa/s10.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">11 / 120</div>
+        <img src="./assets/images/sofa/s11.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">12 / 120</div>
+        <img src="./assets/images/sofa/s12.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">13 / 120</div>
+        <img src="./assets/images/sofa/s13.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">14 / 120</div>
+        <img src="./assets/images/sofa/s14.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">15 / 120</div>
+        <img src="./assets/images/sofa/s15.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">16 / 120</div>
+        <img src="./assets/images/sofa/s16.jpeg" style="width:100%">
+        </div>
+
+
+        <div class="mySlides">
+        <div class="numbertext">17 / 120</div>
+        <img src="./assets/images/sofa/s17.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">18 / 120</div>
+        <img src="./assets/images/sofa/s18.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">19 / 120</div>
+        <img src="./assets/images/sofa/s19.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">20 / 120</div>
+        <img src="./assets/images/sofa/s20.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">21 / 120</div>
+        <img src="./assets/images/sofa/s21.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">22 / 120</div>
+        <img src="./assets/images/sofa/s22.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">23 / 120</div>
+        <img src="./assets/images/sofa/s23.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">24 / 120</div>
+        <img src="./assets/images/sofa/s24.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">25 / 120</div>
+        <img src="./assets/images/sofa/s25.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">26 / 120</div>
+        <img src="./assets/images/sofa/s26.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">27 / 120</div>
+        <img src="./assets/images/sofa/s27.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">28 / 120</div>
+        <img src="./assets/images/sofa/s28.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">29 / 120</div>
+        <img src="./assets/images/sofa/s29.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">30 / 120</div>
+        <img src="./assets/images/sofa/s30.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">31 / 120</div>
+        <img src="./assets/images/sofa/s31.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">32 / 120</div>
+        <img src="./assets/images/sofa/s32.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">33 / 120</div>
+        <img src="./assets/images/sofa/s33.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">34 / 120</div>
+        <img src="./assets/images/sofa/s34.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">35 / 120</div>
+        <img src="./assets/images/sofa/s35.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">36 / 120</div>
+        <img src="./assets/images/sofa/s36.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">37 / 120</div>
+        <img src="./assets/images/sofa/s37.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">38 / 120</div>
+        <img src="./assets/images/sofa/s38.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">39 / 120</div>
+        <img src="./assets/images/sofa/s39.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">40 / 120</div>
+        <img src="./assets/images/sofa/s40.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">41 / 120</div>
+        <img src="./assets/images/sofa/s41.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">42 / 120</div>
+        <img src="./assets/images/sofa/s42.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">43 / 120</div>
+        <img src="./assets/images/sofa/s43.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">44 / 120</div>
+        <img src="./assets/images/sofa/s44.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">45 / 120</div>
+        <img src="./assets/images/sofa/s45.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">46 / 120</div>
+        <img src="./assets/images/sofa/s46.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">47 / 120</div>
+        <img src="./assets/images/sofa/s47.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">48 / 120</div>
+        <img src="./assets/images/sofa/s48.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">49 / 120</div>
+        <img src="./assets/images/sofa/s49.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">50 / 120</div>
+        <img src="./assets/images/sofa/s50.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">51 / 120</div>
+        <img src="./assets/images/sofa/s51.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">52 / 120</div>
+        <img src="./assets/images/sofa/s52.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">53 / 120</div>
+        <img src="./assets/images/sofa/s53.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">54 / 120</div>
+        <img src="./assets/images/sofa/s54.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">55 / 120</div>
+        <img src="./assets/images/sofa/s55.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides">
+        <div class="numbertext">56 / 120</div>
+        <img src="./assets/images/sofa/s56.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">57 / 120</div>
+        <img src="./assets/images/sofa/s57.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">58 / 120</div>
+        <img src="./assets/images/sofa/s58.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">59 / 120</div>
+        <img src="./assets/images/sofa/s59.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">60 / 120</div>
+        <img src="./assets/images/sofa/s60.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">61 / 120</div>
+        <img src="./assets/images/sofa/s61.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">62 / 120</div>
+        <img src="./assets/images/sofa/s62.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">63 / 120</div>
+        <img src="./assets/images/sofa/s63.jpeg" style="width:100%">
+        </div>
+
+
+        <div class="mySlides">
+        <div class="numbertext">64 / 120</div>
+        <img src="./assets/images/sofa/s64.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">65 / 120</div>
+        <img src="./assets/images/sofa/s65.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">66 / 120</div>
+        <img src="./assets/images/sofa/s66.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">67 / 120</div>
+        <img src="./assets/images/sofa/s67.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">68 / 120</div>
+        <img src="./assets/images/sofa/s68.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">69 / 120</div>
+        <img src="./assets/images/sofa/s69.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">70 / 120</div>
+        <img src="./assets/images/sofa/s70.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">71 / 120</div>
+        <img src="./assets/images/sofa/s71.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">72 / 120</div>
+        <img src="./assets/images/sofa/s72.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">73 / 120</div>
+        <img src="./assets/images/sofa/s73.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">74 / 120</div>
+        <img src="./assets/images/sofa/s74.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">75 / 120</div>
+        <img src="./assets/images/sofa/s75.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">76 / 120</div>
+        <img src="./assets/images/sofa/s76.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">77 / 120</div>
+        <img src="./assets/images/sofa/s77.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">78 / 120</div>
+        <img src="./assets/images/sofa/s78.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">79 / 120</div>
+        <img src="./assets/images/sofa/s79.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">80 / 120</div>
+        <img src="./assets/images/sofa/s80.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">81 / 120</div>
+        <img src="./assets/images/sofa/s81.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">82 / 120</div>
+        <img src="./assets/images/sofa/s82.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">83 / 120</div>
+        <img src="./assets/images/sofa/s83.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">84 / 120</div>
+        <img src="./assets/images/sofa/s84.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">85 / 120</div>
+        <img src="./assets/images/sofa/s85.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">86 / 120</div>
+        <img src="./assets/images/sofa/s86.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">87 / 120</div>
+        <img src="./assets/images/sofa/s87.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">88 / 120</div>
+        <img src="./assets/images/sofa/s88.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">89 / 120</div>
+        <img src="./assets/images/sofa/s89.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">90 / 120</div>
+        <img src="./assets/images/sofa/s90.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">91 / 120</div>
+        <img src="./assets/images/sofa/s91.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">92 / 120</div>
+        <img src="./assets/images/sofa/s92.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">93 / 120</div>
+        <img src="./assets/images/sofa/s93.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">94 / 120</div>
+        <img src="./assets/images/sofa/s94.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">95 / 120</div>
+        <img src="./assets/images/sofa/s95.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">96 / 120</div>
+        <img src="./assets/images/sofa/s96.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">97 / 120</div>
+        <img src="./assets/images/sofa/s97.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">98 / 120</div>
+        <img src="./assets/images/sofa/s98.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">99 / 120</div>
+        <img src="./assets/images/sofa/s99.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">100 / 120</div>
+        <img src="./assets/images/sofa/s100.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">101 / 120</div>
+        <img src="./assets/images/sofa/s101.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">102 / 120</div>
+        <img src="./assets/images/sofa/s102.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides">
+        <div class="numbertext">103 / 120</div>
+        <img src="./assets/images/sofa/s103.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">104 / 120</div>
+        <img src="./assets/images/sofa/s104.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">105 / 120</div>
+        <img src="./assets/images/sofa/s105.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">106 / 120</div>
+        <img src="./assets/images/sofa/s106.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">107 / 120</div>
+        <img src="./assets/images/sofa/s107.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">108 / 120</div>
+        <img src="./assets/images/sofa/s108.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">109 / 120</div>
+        <img src="./assets/images/sofa/s109.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">110 / 120</div>
+        <img src="./assets/images/sofa/s110.jpeg" style="width:100%">
+        </div>
+
+
+        <div class="mySlides">
+        <div class="numbertext">111 / 120</div>
+        <img src="./assets/images/sofa/s111.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">112 / 120</div>
+        <img src="./assets/images/sofa/s112.jpeg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">113 / 120</div>
+        <img src="./assets/images/sofa/s113.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+        <div class="numbertext">114 / 120</div>
+        <img src="./assets/images/sofa/s114.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">115 / 120</div>
+        <img src="./assets/images/sofa/s115.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">116 / 120</div>
+        <img src="./assets/images/sofa/s116.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">117 / 120</div>
+        <img src="./assets/images/sofa/s117.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">118 / 120</div>
+        <img src="./assets/images/sofa/s118.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">119 / 120</div>
+        <img src="./assets/images/sofa/s119.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">120 / 120</div>
+        <img src="./assets/images/sofa/s120.jpeg" style="width:100%">
+        </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+
+    <!--End Photo Grid-->
+
+    <!-- footer -->
+   <section class="w3l-footer-29-main">
+    <div class="footer-29 py-5">
+        <div class="container py-lg-4">
+            <div class="row footer-top-29">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-3 col-6 footer-list-29">
+                            <ul>
+                                <h6 class="footer-title-29">Royal Decors</h6>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#features">About</a></li>
+                                <li><a href="#faqs">Gallery</a></li>
+                                <li><a href="#reviews">Reviews</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 footer-list-29">
+                            <ul>
+                                <h6 class="footer-title-29">Explore</h6>
+                                <li><a href="#privacy">Privacy Policy</a></li>
+                                <li><a href="#terms"> Terms of Service</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="#support"> Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
+                            <ul>
+                                <h6 class="footer-title-29">More Info</h6>
+                                <li><a href="#fitment">How we work</a></li>
+                                <li><a href="about.html">About us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
+                            <h6 class="footer-title-29">Orders</h6>
+                            <ul>
+                                <li><a href="#order">Order status</a></li>
+                                <li><a href="#shipping">Shipping</a></li>
+                                <li><a href="#delivery">Delivery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer-contact-list mt-lg-0 mt-md-5 mt-4">
+                    <h6 class="footer-title-29">Contact Info </h6>
+                    <ul>
+                        <li class="d-flex align-items-center py-2"><i class="fa fa-map-marker mr-2"
+                                aria-hidden="true"></i>Near, Old Muncipal, Jamiya Masjid Complex, Humnabad-585330, Dist-Bidar</li>
+                         <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2"
+                                aria-hidden="true"></i><a href="tel:+91 9538232141">+91
+                                9538232141</a></li>
+                        <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2"
+                                aria-hidden="true"></i><a href="tel:+91 9036024261">+91
+                                9036024261</a></li>
+                        <li class="d-flex align-items-center py-2"><i class="fa fa-envelope mr-2"
+                                aria-hidden="true"></i><a href="mailto:info@example.com">khanimran93443@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //footer -->
+<!-- copyright -->
+<section class="w3l-copyright">
+    <div class="container">
+        <div class="row bottom-copies">
+            <p class="col-lg-8 copy-footer-29">© 2023. All rights reserved. Design by <a
+                    href="https://wa.me/+919611122954/" target="_blank">
+                    Zohaib</a></p>
+            <div class="col-lg-4 text-right">
+                <div class="main-social-footer-29">
+                    <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                    <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                    <a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                    <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                    <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //copyright -->
+<!-- photo grid script-->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    <!--End photo grid script-->
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-level-up" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the 
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.   
+            autoType(".type-js", 200);
+        });
+    </script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!--bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+    <!-- //Js scripts -->
+
+</body>
+</html>
